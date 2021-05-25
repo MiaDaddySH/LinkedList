@@ -58,10 +58,10 @@ public class LinkedList<T> {
         if index >= 0 {
             var node = head
             var i = index
-            while node != nil {
+            while let aNode = node {
                 if i == 0 { return node }
                 i -= 1
-                node = node!.next
+                node = aNode.next
             }
         }
         return nil
